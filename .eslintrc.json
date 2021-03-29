@@ -25,9 +25,16 @@
   ],
   "rules": {
     "camelcase": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading":"off",
+    "react/prop-types":"off",
+    "import/prefer-default-export": "off",
+    // "@typescript-eslint/ban-types": "off",
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "react/jsx-filename-extension": [
       1,
       {
