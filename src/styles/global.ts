@@ -13,7 +13,7 @@ export default createGlobalStyle`
    color: #fff;
  }
 
- body, input button {
+ body, input, button {
    font-family: 'Roboto Slab', serif;
    font-size: 16px;
  }
