@@ -1,17 +1,19 @@
 import React from 'react';
 import { useTransition } from 'react-spring';
+
+import Toast from './Toast';
+
 import { ToastMessage } from '../../hooks/toast';
 import { Container } from './styles';
-import Toast from './Toast';
 
 interface ToastContainerProps {
   messages: ToastMessage[];
 }
 
-export const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
+const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
   const messagesWithTransitions = useTransition(
     messages,
-    (message: ToastMessage) => message.id,
+    message => message.id,
     {
       from: { right: '-120%', opacity: 0 },
       enter: { right: '0%', opacity: 1 },
@@ -27,3 +29,5 @@ export const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
     </Container>
   );
 };
+
+export default ToastContainer;
