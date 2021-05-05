@@ -16,6 +16,7 @@
     "@unform/web": "^2.1.6",
     "axios": "^0.21.1",
     "date-fns": "^2.21.1",
+    "netlify-cli": "^3.26.2",
     "polished": "^4.1.1",
     "react": "^17.0.2",
     "react-day-picker": "^7.4.10",
@@ -34,7 +35,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "node_modules/netlify-cli/bin/run"
   },
   "browserslist": {
     "production": [
