@@ -36,6 +36,7 @@ const Profile: React.FC = () => {
             .required('Email obrigatório')
             .email('Digite um e-mail válido'),
           old_password: Yup.string().when('old_password', {
+            // eslint-disable-next-line
             is: (val: any) => !!val.length,
             then: Yup.string().required('Campo obrigatório'),
             otherwise: Yup.string(),
